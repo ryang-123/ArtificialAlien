@@ -1,0 +1,699 @@
+/*!
+ * Start Bootstrap - Resume v5.0.5 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
+body {
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  padding-top: 54px;
+  color: #545454; /* main text colour */
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40; /* secondary colour */
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 4rem; /* heading sizes (projects, experience, contact, etc.) */
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p.lead {
+  font-size: 1.1rem; /* 18 pixels */
+  font-weight: 400;
+}
+
+p.lead2 {
+  font-size: 1.0rem;
+  font-weight: 400;
+}
+
+.header {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.header h2 {
+  text-align: center;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #FF00FF;
+  width: 0%;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i: {
+  color: #468499;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.25); /* changes icon outline and transparency */
+  }
+  #sideNav .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: 75rem;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+/* resume-section 2*/
+
+section.resume-section2 {
+  padding-top: 45px !important; /* mobile. distance from top of mobile picture to top of page */
+  padding-bottom: 5rem !important;
+  max-width: 75rem;
+}
+
+section.resume-section2 .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section2 {
+    min-height: 100vh;
+  }
+  section.resume-section2 .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) { /* if width is more than 992px (desktop) then do this */
+  section.resume-section2 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #FF00FF; /* ACCENT COLOUR - ICONS */
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a:last-child { margin-right: 0; }
+
+.social-icons a:hover { background-color: #39ff14; } /* LIGHTER ACCENT COLOUR - ICON COLOUR WHEN HOVERING */
+
+.bg-primary { background-color: #373234  !important } /* PRIMARY COLOUR - MAIN NAVIGATION BAR */
+
+.text-primary { color: #FF00FF !important } /* ACCENT COLOUR - NGUYEN TEXT */
+
+a { color: #FF00FF; } /* ACCENT COLOUR - E-MAIL AND HYPERTEXT LINKS*/
+
+a:hover, a:focus, a:active { color: #39ff14; } /* LIGHTER ACCENT COLOUR - E-MAIL AND LINKS COLOUR WHEN HOVERING */
+
+.aboutme {
+  list-style: none;
+  display: block;
+  padding: 0;
+}
+
+.abouttitle {  
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: inline-block;
+  width: 120px;
+  position: relative;
+}
+
+.aboutinfo {
+  font-size: 1.1rem;
+}
+
+.abouttitle::after { /* ABOUT ME SECTION, JUST THE COLON */
+  position: absolute;
+  content: ':';
+  left: 100px;
+}
+
+.divider {
+  border-left: 1px solid #888;
+}
+
+/* TIMELINE CODE */
+
+.example-header {
+  background: #3D4351;
+  color: #FFF;
+  font-weight: 300;
+  padding: 3em 1em;
+  text-align: center;
+}
+
+.example-header h1 {
+  color: #FFF;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.example-header p {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.container-fluid .row {
+  padding: 0 0 0em 0;
+}
+
+.example-title {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 3em 0;
+  border-bottom: 1px solid #E4EAEC;
+}
+
+.example-title p {
+  margin: 0 auto;
+  font-size: 16px;
+  max-width: 400px;
+}
+
+.customPadding {
+  padding-right: 25vw; /* for about me section */
+}
+
+.customPadding2 {
+  padding-right: 10vw; /* for contact me section */
+}
+
+.timeline {
+  line-height: 1.4em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
+  line-height: 30px; /* spacing between title words in timeline */
+}
+
+.timeline-item {
+  padding-left: 25px; /* padding betwen shadow line and actual timeline */
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-info {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0 0 .5em 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+}
+
+.timeline-marker:before {
+  background: #39ff14; /* colour of timeline icon solid; not hovering */
+  border: 3px solid transparent;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 15px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 15px;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.timeline-marker:after {
+  content: "";
+  width: 3px;
+  background: #FF00FF;
+  display: block;
+  position: absolute;
+  top: 24px;
+  bottom: 0;
+  left: 6px;
+}
+
+.at-column .timeline-info, .at-column .timeline-content {
+    z-index: 0;
+    position: relative;
+    background: rgba(0,230,0,0);
+    padding-left: 15px; /* padding between shaodow line and LEFT text */
+    padding-right: 10px;
+    padding-bottom: 5px; /* padding between text to shadow BOTTOM */
+    box-sizing: border-box;
+    border-radius: 10px;  /* rounded corners */
+    transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.at-column .timeline-info{
+  padding-top: 0px; /* padding between date (very top) to top shadow box */
+  padding-left: 0px;
+}
+
+.at-column:before .timeline-content{
+    content: "";
+    display: block;
+    padding-top: 0;
+}
+
+.at-column:hover .timeline-content {
+    z-index: 1;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: box-shadow 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
+}
+
+.timeline-item:last-child .timeline-marker:after {
+  content: none;
+}
+
+.timeline-item:not(.period):hover .timeline-marker:before {
+  background: transparent;
+  border: 3px solid #D84339; /* colour of timeline icons when hovering over */
+}
+
+.timeline-content {
+  padding-bottom: 20px;
+}
+
+.timeline-content p:last-child {
+  margin-bottom: 0;
+}
+
+.period {
+  padding: 0;
+}
+
+.period .timeline-info {
+  display: none;
+}
+
+.period .timeline-marker:before {
+  background: transparent;
+  content: "";
+  width: 15px;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  top: 0;
+  bottom: 30px;
+  position: absolute;
+  border-top: 3px solid #CCD5DB;
+  border-bottom: 3px solid #CCD5DB;
+}
+
+.period .timeline-marker:after {
+  content: "";
+  height: 32px;
+  top: auto;
+}
+
+.period .timeline-content {
+  padding: 40px 0 70px;
+}
+
+.period .timeline-title {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .timeline-split .timeline, .timeline-centered .timeline {
+    display: table;
+  }
+  .timeline-split .timeline-item, .timeline-centered .timeline-item {
+    display: table-row;
+    padding: 0;
+  }
+  .timeline-split .timeline-info, .timeline-centered .timeline-info,
+  .timeline-split .timeline-marker,
+  .timeline-centered .timeline-marker,
+  .timeline-split .timeline-content,
+  .timeline-centered .timeline-content,
+  .timeline-split .period .timeline-info,
+  .timeline-centered .period .timeline-info {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .timeline-split .timeline-marker, .timeline-centered .timeline-marker {
+    position: relative;
+  }
+  .timeline-split .timeline-content, .timeline-centered .timeline-content {
+    padding-left: 30px;
+  }
+  .timeline-split .timeline-info, .timeline-centered .timeline-info {
+    padding-right: 30px;
+  }
+  .timeline-split .period .timeline-title, .timeline-centered .period .timeline-title {
+    position: relative;
+    left: -45px;
+  }
+}
+
+@media (min-width: 992px) {
+  .timeline-centered,
+  .timeline-centered .timeline-item,
+  .timeline-centered .timeline-info,
+  .timeline-centered .timeline-marker,
+  .timeline-centered .timeline-content {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .timeline-centered .timeline-item {
+    padding-bottom: 40px;
+    overflow: hidden;
+  }
+  .timeline-centered .timeline-marker {
+    position: absolute;
+    left: 50%;
+    margin-left: -7.5px;
+  }
+  .timeline-centered .timeline-info,
+  .timeline-centered .timeline-content {
+    width: 50%;
+  }
+  .timeline-centered > .timeline-item:nth-child(odd) .timeline-info {
+    float: left;
+    text-align: right;
+    padding-right: 30px;
+  }
+  .timeline-centered > .timeline-item:nth-child(odd) .timeline-content {
+    float: right;
+    text-align: left;
+    padding-left: 30px;
+  }
+  .timeline-centered > .timeline-item:nth-child(even) .timeline-info {
+    float: right;
+    text-align: left;
+    padding-left: 30px;
+  }
+  .timeline-centered > .timeline-item:nth-child(even) .timeline-content {
+    float: left;
+    text-align: right;
+    padding-right: 30px;
+  }
+  .timeline-centered > .timeline-item.period .timeline-content {
+    float: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .timeline-centered .timeline-item.period {
+    padding: 50px 0 90px;
+  }
+  .timeline-centered .period .timeline-marker:after {
+    height: 30px;
+    bottom: 0;
+    top: auto;
+  }
+  .timeline-centered .period .timeline-title {
+    left: auto;
+  }
+}
+
+.marker-outline .timeline-marker:before {
+  background: transparent;
+  border-color: #FF6B6B;
+}
+
+.marker-outline .timeline-item:hover .timeline-marker:before {
+  background: #FF6B6B;
+}
+
+/* below are my own classes */
+
+.twitter-spacing {
+  padding-left: 5%;
+}
+
+.project-font {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007d71
+}
+
+.project-font2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.project-font3 {
+  font-size: 16px;
+}
+
+.project-font4 {
+  font-size: 18px;
+}
+
+.photo-mobile {
+  position: absolute;
+  left: -999999px;
+}
+
+/* TABLET */
+
+@media (max-width: 992px) { /* execute THIS until 992px. post 992px, switch */
+  .abouttitle {   /* ABOUT ME SECTION, TEXT ON LEFT (Name, Age, Location, etc.) */
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: inline;
+  }
+  .abouttitle::after { /* ABOUT ME SECTION, JUST THE COLON */
+    position: relative;
+    content: ':';
+    left: 0px;
+  }
+  .pictures {
+    width: 85vw;
+    left: 20vw;
+  }
+  .customPadding {
+    padding-right: 0px !important;
+  }
+  .photo-mobile {
+    position: relative;
+    left: 0px;
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    top: -15px; /* distance from bottom of picture to CHRIS text. more negative, closer to the top it is */
+  }
+  .img-fluid2 {
+    max-width: 220px;
+    height: auto;
+    border: 0.5rem solid rgba(105, 101, 103, 0.40); /* changes icon outline and transparency */
+  }
+  .name-mobile {
+    font-size: 120px;
+    text-align: center;
+    padding-bottom: 1px;
+  }
+  .tagline-mobile {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 610px) { /* execute THIS until 610px. post 610px, switch */
+  .abouttitle {   /* ABOUT ME SECTION, TEXT ON LEFT (Name, Age, Location, etc.) */
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: inline;
+  }
+  .abouttitle::after { /* ABOUT ME SECTION, JUST THE COLON */
+    position: relative;
+    content: ':';
+    left: 0px;
+  }
+  .pictures {
+    width: 80vw;
+    left: 20vw;
+  }
+  .customPadding {
+    padding-right: 0px !important;
+  }
+  .photo-mobile {
+    position: relative;
+    left: 0px;
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    top: -15px; /* distance from bottom of picture to CHRIS text. more negative, closer to the top it is */
+  }
+  .img-fluid2 {
+    max-width: 50%;
+    height: auto;
+    border: 0.5rem solid rgba(105, 101, 103, 0.40); /* changes icon outline and transparency */
+  }
+  .name-mobile {
+    font-size: 20vw;
+    text-align: center;
+    padding-bottom: 1vw;
+  }
+  .tagline-mobile {
+    font-size: 5vw;
+    text-align: center;
+  }
+}
+@media (max-width: 647px) { /* when less than 661 add spacing */
+  .column-spacing {
+    padding-top: 35px;
+  }
+}
+@media (min-width: 768px) { /* when > 768 have 2 cols. when 768 or bigger, NO SPACING */
+  .column-spacing {
+    padding-top: 0px;
+  }
+}
